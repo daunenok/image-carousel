@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	background-color: #eee;
+}
+h1 {
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	font-size: 48px;
+	margin: 0 0 10px 0;
+}
+.container {
+	width: 1028px;
+	height: 650px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.arr-left, .arr-right {
+	width: 64px;
+	height: 600px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.arr-right a, .arr-left a {
+	display: block;
+	width: 64px;
+	height: 64px;
+	background-image: url("images/next.png");
+}
+.arr-left a {
+	background-image: url("images/back.png");
+}
+.images {
+	width: 900px;
+	height: 600px;
+}
+.pagination {
+	width: 1028px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pagination a {
+	display: block;
+	width: 15px;
+	height: 15px;
+	margin-right: 10px;
+	background-color: #fff;
+	border-radius: 100%;
+	border: 1px solid #000;
+}
+.pagination a.full {
+	background-color: #000;
+}
+.thumb-right img, .thumb-left img {
+	position: absolute;
+	top: 70px;
+	left: -70px;
+}
+.thumb-left img {
+	right: -70px;
+}
